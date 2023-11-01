@@ -33,6 +33,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              primary_color: "#F85559",
             },
           },
         },
@@ -45,5 +46,94 @@
       }
     </style>
   </head>
-  <body></body>
+  <body class="lato">
+    <!-- Header Section -->
+    <header class="max-w-7xl mx-auto">
+      <!-- Nav Section -->
+      <div class="navbar bg-primary_color px-12 py-4 rounded-full mt-10">
+        <!-- Nav Menu-->
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <ul
+            class="menu menu-horizontal px-1 text-lg hidden lg:flex text-white"
+          >
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <!-- Nav Logo -->
+        <div class="navbar-center hidden lg:flex">
+          <img class="mr-2" src="./images/logo.png" alt="" />
+          <a class="normal-case text-4xl font-bold text-white">Fruit Burst</a>
+        </div>
+        <!-- Nav Search -->
+        <div class="navbar-end">
+          <div class="form-control">
+            <form>
+              <div class="flex">
+                <div class="relative w-full">
+                  <input
+                    type="search"
+                    id="search-dropdown"
+                    class="block p-2.5 w-full z-20 text-sm dark:focus:border-blue-500 rounded-full"
+                    placeholder="Search here"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-gray-400"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                      />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
